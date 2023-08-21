@@ -5,10 +5,10 @@ import numpy as np
 def prediction(image_path):
     # Load the model
     model = load_model("keras_Model.h5", compile=False)
-
+    print('reached here')
     # Load the labels
     class_names = open("labels.txt", "r").readlines()
-
+    
     # Create the array of the right shape to feed into the keras model
     # The 'length' or number of images you can put into the array is
     # determined by the first position in the shape tuple, in this case 1
